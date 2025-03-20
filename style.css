@@ -1,0 +1,239 @@
+/* style.css */
+html {
+    scroll-behavior: smooth;
+    }
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif; /*
+    Default font for body text */
+    color: #333; /* Default text color */
+    line-height: 1.8;
+    }
+    body.dark-mode {
+    background-color: #121212;
+    color: black;
+    }
+    body.dark-mode input, body.darkmode
+    textarea {
+    background-color: #333;
+    color: white;
+    border-color: #555;
+    }
+    header {
+    background: linear-gradient(90deg,
+    #ff8a00, #e52e71);
+    animation: gradient-animation 6s
+    infinite;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    }
+    @keyframes gradient-animation {
+    0% { background-position: 0%; }
+    50% { background-position: 100%; }
+    100% { background-position: 0%; }
+    }
+    header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    }
+    
+    main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    }
+    #form-section, #resume-section {
+    flex: 1;
+    min-width: 300px;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    }
+    label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    }
+    input, textarea, button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    }
+    button {
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    }
+    button:hover {
+    background: #555;
+    }
+    #resume-preview {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 5px;
+    }
+    input:focus, textarea:focus {
+    outline: none;
+    border-color: #ff8a00;
+    box-shadow: 0 0 5px #ff8a00;
+    transition: box-shadow 0.3s ease-inout;
+    }
+    button {
+    background: linear-gradient(90deg,
+    #e52e71, #ff8a00);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    transition: transform 0.2s, boxshadow
+    0.2s;
+    }
+    button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0,
+    0, 0.2);
+    }
+    #resume-preview {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0,
+    0, 0.1);
+    transition: transform 0.3s ease-inout,
+    box-shadow 0.3s ease-in-out;
+    }
+    #resume-preview:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0,
+    0, 0.2);
+    }
+    /* Style for the label */
+    label[for="theme-switch"] {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    color: black;
+    transition: color 0.3s;
+    }
+    /* Style the checkbox container */
+    #theme-switch {
+    appearance: none; /* Remove
+    default checkbox styling */
+    width: 50px;
+    height: 25px;
+    background: linear-gradient(90deg,
+    #ff8a00, #e52e71);
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid transparent;
+    transition: background 0.3s, bordercolor
+    0.3s;
+    }
+    /* Add the toggle ball */
+    #theme-switch::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 19px;
+    height: 19px;
+    background: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease-inout;
+    box-shadow: 0 2px 5px rgba(0, 0, 0,
+    0.2);
+    }
+    /* When the checkbox is checked
+    (Dark mode active) */
+    #theme-switch:checked {
+    background: linear-gradient(90deg,
+    #333, #555);
+    }
+    #theme-switch:checked::before {
+    transform: translateX(25px);
+    }
+    /* Add hover and focus effects */
+    #theme-switch:hover {
+    border-color: #e52e71;
+    }
+    #theme-switch:focus {
+    border-color: #ff8a00;
+    outline: none;
+    }
+    /* Add hover and focus effects */
+    #theme-switch:hover {
+    border-color: #e52e71;
+    }
+    #theme-switch:focus {
+    border-color: #ff8a00;
+    outline: none;
+    }
+    /* Add Google Font for a modern
+    look */
+    @import
+    url('https://fonts.googleapis.com/cs2?family=Roboto:wght@300;400;700&family=Poppins:wght@400;600&display=swap');
+    /* Headings with a bolder and
+    distinct font */
+    h1, h2, h3 {
+        font-family: "Trirong", serif;
+    letter-spacing: 1.5px;
+    color: #e52e71;
+    }
+    h1 {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0,
+    0, 0.9);
+    color: white;
+    }
+    h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ff8a00;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    }
+    /* Paragraphs with better readability
+    */
+    p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+    letter-spacing: 0.5px;
+    }
+    /* Links with hover effects */
+    a {
+    color: #e52e71;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    }
+    a:hover {
+    color: #ff8a00;
+    }
+    /* Form labels */
+    label {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #998585;
+    letter-spacing: 0.5px;
+    }
